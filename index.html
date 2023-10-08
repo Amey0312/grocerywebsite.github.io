@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Farm2Table||Online e-commerce Grocery website for </title>
+  </head>
+  <body>
+
+    <!--==Navigation================================-->
+    <nav class="navigation">
+      <!--logo-------->
+      <a href="/index.html" class="logo"> <span>Farm2</span>Table</a>
+      <!--menu-btn---->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <!--menu-------->
+      <ul class="menu">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="#category">Categories</a></li>
+        <li><a href="#popular-bundle-pack">Our Packages</a></li>
+        <li><a href="#About-Us">About Us</a></li>
+      </ul>
+      <!--right-nav-(cart-like)-->
+      <div class="right-nav">
+    
+        <!--cart----->
+        <a href="#" class="cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </a>
+      </div>
+    </nav>
+    <!--nav-end--------------------->
+    <!--==Search-banner=======================================-->
+    <section id="search-banner" style="height: 80vh;">
+      <!--bg--------->
+      <img src="D:\eGrocery\images/bg-1.png" class="bg-1" alt="bg" />
+      <img src="D:\eGrocery\images/bg-2.png" class="bg-2" alt="bg-2" />
+      <!--text------->
+      <div class="search-banner-text">
+        <h1>Order Your daily Groceries</h1>
+        <strong>#Fresh and Juicy</strong>
+        <!--search-box------>
+        <form action="" class="search-box">
+          <!--icon------>
+          <i class="fas fa-search"></i>
+          <!--input----->
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search your daily groceries"
+            name="search"
+            required
+          />
+          <!--btn------->
+          <input type="submit" class="search-btn" value="Search" />
+        </form>
+      </div>
+    </section>
+    <!--search-banner-end--------------->
+    <!--==category=========================================-->
+    <section id="category">
+      <!--heading---------------->
+      <div class="category-heading">
+        <h2>Category</h2>
+        <span>All</span>
+      </div>
+      <!--box-container---------->
+      <div class="category-container">
+        <!--box-1--------------->
+        <a href="./veggies/index.html"  class="category-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQrGns6gqt-GIBR4QRmSTItTQWmOthbW7SA&usqp=CAU" alt="Fish" />
+          <span>Vegies & Fruits</span>
+        </a>
+        <!--box-2--------------->
+        <a href="./dairypro/index.html" class="category-box">
+          <img src="data:image/jpeg;base64,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" alt="Fish" />
+          <span>Dairy Products</span>
+        </a>
+        <!--box-3--------------->
+        <a href=".//grocery/index.html" class="category-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVsxzOC3y9DmOXVFpstRUA80cy8iv30Bj5Zg&usqp=CAU" alt="Fish" />
+          <span>Groceries</span>
+        </a>
+        <!--box-4--------------->
+        <a href=".//snacks/index.html" class="category-box">
+          <img src="data:image/png;base64,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" alt="Fish" />
+          <span>Snacks & Drinks</span>
+        </a>
+        <!--box-5--------------->
+        <a href=".//nonveg/index.html" class="category-box">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUXLSwMBGV_7sMZ6VPpjCP9_PIZc9u9xm0A&usqp=CAU" alt="Fish" />
+          <span>Meat & Fish</span>
+        </a>
+        
+      </div>
+    </section>
+    <!--category-end----------------------------------->
+    <!--==Products====================================-->
+    <section id="popular-product">
+      <!--heading----------->
+      <div class="product-heading">
+        <h3>Popular Product</h3>
+        <span>All</span>
+      </div>
+      <!--box-container------>
+      <div class="product-container">
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/apple.png" alt="image" />
+          <strong>Apple</strong>
+          <span imageass="quantity">1 KG</span>
+          <span class="price">100rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/chili.png" alt="image" />
+          <strong>Flour</strong>
+          <span class="quantity">5 KG</span>
+          <span class="price">176Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/onion.png" alt="image" />
+          <strong>Onion</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">42Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/patato.png" alt="image" />
+          <strong>Patato</strong>
+          <span class="quantity">1 KG</span>
+          <span class="price">36Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/garlic.png" alt="image" />
+          <strong>Garlic</strong>
+          <span class="quantity">100g</span>
+          <span class="price">40Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/tamato.png" alt="image" />
+          <strong>Tamato</strong>
+          <span class="quantity">200g</span>
+          <span class="price">20Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--popular-product-end--------------------->
+    <!--Popular-bundle-pack===================================-->
+    <section id="popular-bundle-pack">
+      <!--heading-------------->
+      <div class="product-heading">
+        <h3>Popular Bundle Pack</h3>
+      </div>
+      <!--box-container------>
+      <div class="product-container">
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/pack1.png" alt="image" />
+          <strong>Mega Pack</strong>
+          <span class="quantity">Onion, Tamato, Patato(3kg each)</span>
+          <span class="price">340Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/pack2.jpg" alt="image" />
+          <strong>Large Pack</strong>
+          <span class="quantity">Onion, Tamato, Patato(2kg each)</span>
+          <span class="price">220Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/pack3.png" alt="image" />
+          <strong>Small Pack</strong>
+          <span class="quantity">Onion, Tamato, Patato(1kg each)</span>
+          <span class="price">110Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/pack1.png" alt="image" />
+          <strong>Mega Pack</strong>
+          <span class="quantity">Onion, Tamato, Patato(3kg each)</span>
+          <span class="price">340Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/pack2.jpg" alt="image" />
+          <strong>Large Pack</strong>
+          <span class="quantity">Onion, Tamato, Patato(2kg each)</span>
+          <span class="price">220Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="D:\eGrocery/images/pack3.png" alt="image" />
+          <strong>Small Pack</strong>
+          <span class="quantity">Onion, Tamato, Patato(1kg each)</span>
+          <span class="price">110Rs</span>
+          <!--cart-btn------->
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-bag"></i> Add Cart
+          </a>
+          <!--like-btn------->
+          <a href="#" class="like-btn">
+            <i class="far fa-heart"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--popular-bundle-pack-end-------------------------------->
+    <!--==Clients===============================================-->
+    <section id="clients">
+      <!--heading---------------->
+      <div class="client-heading">
+        <h3>What Our Client's Say</h3>
+      </div>
+      <!--box-container---------->
+      <div class="client-box-container">
+        <!--box------------->
+        <div class="client-box">
+          <!--==profile===-->
+          <div class="client-profile">
+            <!--img--->
+            <img src="D:\eGrocery/images/client-1.jpg" alt="client" />
+            <!--text-->
+            <div class="profile-text">
+              <strong>Raj Panchal</strong>
+              <span>CEO(Google)</span>
+            </div>
+          </div>
+          <!--==Rating======-->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!--==comments===-->
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ea
+            id, itaque architecto atque mollitia aperiam voluptatem consequatur
+            incidunt sed placeat, harum recusandae quaerat at hic labore eius
+            laborum quas!
+          </p>
+        </div>
+        <!--box------------->
+        <div class="client-box">
+          <!--==profile===-->
+          <div class="client-profile">
+            <!--img--->
+            <img src="D:\eGrocery/images/client-2.jpg" alt="client" />
+            <!--text-->
+            <div class="profile-text">
+              <strong>Sakshi Rajmane</strong>
+              <span>Software Developer(Microsoft)</span>
+            </div>
+          </div>
+          <!--==Rating======-->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!--==comments===-->
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ea
+            id, itaque architecto atque mollitia aperiam voluptatem consequatur
+            incidunt sed placeat, harum recusandae quaerat at hic labore eius
+            laborum quas!
+          </p>
+        </div>
+        <!--box------------->
+        <div class="client-box">
+          <!--==profile===-->
+          <div class="client-profile">
+            <!--img--->
+            <img src="D:\eGrocery/images/client-3.jpg" alt="client" />
+            <!--text-->
+            <div class="profile-text">
+              <strong>Sarthak Patil</strong>
+              <span>CFO(L&T)</span>
+            </div>
+          </div>
+          <!--==Rating======-->
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!--==comments===-->
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ea
+            id, itaque architecto atque mollitia aperiam voluptatem consequatur
+            incidunt sed placeat, harum recusandae quaerat at hic labore eius
+            laborum quas!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--client-section-end---------->
+    <!-- ==Partnre-logo================================-->
+    <!-- <section id="partner">
+      <!--heading------------>
+      <!-- <div class="partner-heading">
+        <h3>Our Trusted Partner</h3>
+      </div>
+      <!--logo-container----->
+      <!-- <div class="logo-container">
+        <img src="D:\eGrocery/images/logo-1.png" alt="logo" />
+        <img src="D:\eGrocery/images/logo-2.png" alt="logo" />
+        <img src="D:\eGrocery/images/logo-3.png" alt="logo" />
+        <img src="D:\eGrocery/images/logo-4.png" alt="logo" />
+      </div> --> 
+    <!-- </section> --> 
+    <!--logo-section-end-------------------
+ -->
+
+     
+        <!--==Footer=============================================-->
+        <footer>
+      <div class="footer-container">
+        <!--logo-container------>
+        <div class="footer-logo">
+          <a href="#"><span>FARM2</span>TABLE</a>
+          <!--social----->
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Product</strong>
+          <ul>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">For you</a></li>
+            <li><a href="#">Random</a></li>
+          </ul>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Category</strong>
+          <ul>
+            <li><a href="#">Vegetables & Fruits</a></li>
+            <li><a href="#">Dairy</a></li>
+            <li><a href="#">Groceries</a></li>
+            <li><a href="#">Snacks & Drinks</a></li>
+            <li><a href="#">Meat & Fish</a></li>
+            <li><a href="#">Medical Basics</a></li>
+            <li><a href="#">Personal Care</a></li>
+            <li><a href="#">Pet Care</a></li>
+          </ul>
+        </div>
+        <!--links-------------------------->
+        <div class="footer-links">
+          <strong>Contact</strong>
+          <ul>
+            <li><a href="#">Phone : +123456789</a></li>
+            <li><a href="#">Email : Example@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
